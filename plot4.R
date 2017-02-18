@@ -4,10 +4,10 @@ source("readPowerData.R")
 ##---------make the plots----------------------
 par(mfrow=c(2,2))
 # ------Global_active_power
-plot(powerConsumptionDataFiltered$Time, powerConsumptionDataFiltered$Global_active_power, type="l", xlab="", ylab="Global Active Power",cex.lab=0.7, cex.axis=0.8,)
+plot(powerConsumptionDataFiltered$Time, powerConsumptionDataFiltered$Global_active_power, type="l", xlab="", ylab="Global Active Power",cex.lab=0.7, cex.axis=0.8)
 
 # ------Voltage
-plot(powerConsumptionDataFiltered$Time, powerConsumptionDataFiltered$Voltage,type="l", ylab="Voltage", xlab="datetime", cex.lab=0.7, cex.axis=0.8,)
+plot(powerConsumptionDataFiltered$Time, powerConsumptionDataFiltered$Voltage,type="l", ylab="Voltage", xlab="datetime", cex.lab=0.7, cex.axis=0.8)
 
 # -------Sub_metering
 plot(powerConsumptionDataFiltered$Time, powerConsumptionDataFiltered$Sub_metering_1, type="l", ylab="Energy sub metering", xlab="", cex.lab=0.7, cex.axis=0.8)
